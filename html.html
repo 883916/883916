@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>html</title>
+  <title>郭峻熙的个人网页</title>
   <style>
   @font-face {
   font-family: octicons-link;
@@ -2318,68 +2318,157 @@ body {
   border-bottom: 2px dotted black;
 }
 </style>
-  
 </head>
 <body>
-  <article class="markdown-body"><h1 class="atx" id="html文件结构">html文件结构</h1>
-<pre><code class="fenced-code-block language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span></code></pre>
-<p>起始行
-↑告诉浏览器这是一个html</p>
-<p>开始标签:<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.5782em;vertical-align:-0.0391em;" class="strut"></span><span class="mrel">&lt;</span><span style="margin-right:0.2778em;" class="mspace"></span></span><span class="base"><span style="height:0.7335em;vertical-align:-0.0391em;" class="strut"></span><span class="mord mathnormal">h</span><span class="mord mathnormal">t</span><span class="mord mathnormal">m</span><span style="margin-right:0.01968em;" class="mord mathnormal">l</span><span style="margin-right:0.2778em;" class="mspace"></span><span class="mrel">&gt;</span></span></span></span></p>
-<p>结束标签:<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.5782em;vertical-align:-0.0391em;" class="strut"></span><span class="mrel">&lt;</span><span style="margin-right:0.2778em;" class="mspace"></span></span><span class="base"><span style="height:1em;vertical-align:-0.25em;" class="strut"></span><span class="mord">/</span><span class="mord mathnormal">h</span><span class="mord mathnormal">t</span><span class="mord mathnormal">m</span><span style="margin-right:0.01968em;" class="mord mathnormal">l</span><span style="margin-right:0.2778em;" class="mspace"></span><span class="mrel">&gt;</span></span></span></span></p>
-<p>两者成对出现</p>
-<h2 class="atx" id="head-and-body">head and body</h2>
-<pre><code class="fenced-code-block language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
-             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>网页</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thml</span><span class="token punctuation">&gt;</span></span></code></pre>
-<p>其效果为:<img alt="" src="file:///C:/Users/Alex%20Guo/Pictures/QQ%E6%88%AA%E5%9B%BE20221126170639.png"></p>
-<h2 class="atx" id="标题标签">标题标签</h2>
-<pre><code class="fenced-code-block language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>1级标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>2级标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>3级标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span><span class="token punctuation">&gt;</span></span>4级标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span><span class="token punctuation">&gt;</span></span>5级标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h6</span><span class="token punctuation">&gt;</span></span>6级标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h6</span><span class="token punctuation">&gt;</span></span></code></pre>
-<h2 class="atx" id="段落标签">段落标签</h2>
-<pre><code class="fenced-code-block language-html">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>正文<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
-<h2 class="atx" id="文本样式标签">文本样式标签</h2>
-<pre><code class="fenced-code-block language-html">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
-        这是一段文本，<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>b</span><span class="token punctuation">&gt;</span></span>加粗<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>b</span><span class="token punctuation">&gt;</span></span>，<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span><span class="token punctuation">&gt;</span></span>斜体<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>,下标:x<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sub</span><span class="token punctuation">&gt;</span></span>2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sub</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>del</span><span class="token punctuation">&gt;</span></span>删除线<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>del</span><span class="token punctuation">&gt;</span></span>，&lt;br/ &gt;下一行
-     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
-<h2 class="atx" id="列表">列表</h2>
-<h3 class="atx" id="无序列表">无序列表</h3>
-<pre><code class="fenced-code-block language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
-   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span> 列表项<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span> 列表项<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span> 列表项<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span></code></pre>
-<h3 class="atx" id="有序列表">有序列表</h3>
-<pre><code class="fenced-code-block language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span><span class="token punctuation">&gt;</span></span>
-   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span> 列表项<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span> 列表项<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span> 列表项<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span></code></pre>
-<h2 class="atx" id="超链接">超链接</h2>
-<pre><code class="fenced-code-block language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.luogu.com.cn<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>洛谷<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span></code></pre>
-<h2 class="atx" id="多媒体标签">多媒体标签</h2>
-<h3 class="atx" id="图片标签">图片标签</h3>
-<pre><code class="fenced-code-block language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>https://ipic.luogu.com.cn/yugu22sx/banner.png<span class="token punctuation">'</span></span><span class="token punctuation">/&gt;</span></span></code></pre>
-<h3 class="atx" id="视频标签">视频标签</h3>
-<pre><code class="fenced-code-block language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>video</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>“./video</span> <span class="token attr-name">.mp4"controls</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>video</span><span class="token punctuation">&gt;</span></span></code></pre>
-<h3 class="atx" id="音乐标签">音乐标签</h3>
-<pre><code class="fenced-code-block language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>audio</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>./music.mp3<span class="token punctuation">"</span></span><span class="token attr-name">controls</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>audio</span><span class="token punctuation">&gt;</span></span></code></pre>
-<h2 class="atx" id="div标签">div标签</h2>
-<pre><code class="fenced-code-block language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>卡片标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>卡片内容<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+  <article class="markdown-body"><h1 class="atx" id="欢迎来到郭峻熙的个人主页">欢迎来到郭峻熙的个人主页</h1>
+<p>我的照片:</p>
+<p><img alt="" src="https://cdn.luogu.com.cn/upload/image_hosting/74g0e01g.png"></p>
+<h1 class="atx" id="自我介绍"><a href="https://883916.github.io/myself">自我介绍</a></h1>
+<h1 class="atx" id="我的个人blog"><a href="https://883916.github.io/myblog">我的个人blog</a></h1>
+<p><strong>勇于做自己！</strong>   <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.6833em;" class="strut"></span><span style="margin-right:0.05017em;" class="mord mathnormal">B</span><span class="mord mathnormal">e</span></span></span></span> <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.6944em;" class="strut"></span><span class="mord mathnormal">b</span><span style="margin-right:0.02778em;" class="mord mathnormal">r</span><span class="mord mathnormal">a</span><span style="margin-right:0.03588em;" class="mord mathnormal">v</span><span class="mord mathnormal">e</span></span></span></span> <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.6944em;" class="strut"></span><span class="mord mathnormal">an</span><span class="mord mathnormal">d</span></span></span></span> <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.6944em;" class="strut"></span><span class="mord mathnormal">b</span><span class="mord mathnormal">e</span></span></span></span> <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.8889em;vertical-align:-0.1944em;" class="strut"></span><span class="mord mathnormal">yo</span><span class="mord mathnormal">u</span><span class="mord mathnormal">rse</span><span style="margin-right:0.01968em;" class="mord mathnormal">l</span><span style="margin-right:0.10764em;" class="mord mathnormal">f</span><span class="mclose">!</span></span></span></span></p>
+<p>联系方式：<span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.6944em;" class="strut"></span><span style="margin-right:0.13889em;" class="mord mathnormal">P</span><span class="mord mathnormal">h</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mord mathnormal">e</span><span style="margin-right:0.2778em;" class="mspace"></span><span class="mrel">:</span><span style="margin-right:0.2778em;" class="mspace"></span></span><span class="base"><span style="height:0.6444em;" class="strut"></span><span class="mord">13811006671</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.6944em;" class="strut"></span><span style="margin-right:0.05764em;" class="mord mathnormal">E</span><span class="mord mathnormal">mai</span><span style="margin-right:0.01968em;" class="mord mathnormal">l</span><span style="margin-right:0.2778em;" class="mspace"></span><span class="mrel">:</span><span style="margin-right:0.2778em;" class="mspace"></span></span><span class="base"><span style="height:0.8889em;vertical-align:-0.1944em;" class="strut"></span><span class="mord mathnormal">gu</span><span class="mord mathnormal">o</span><span style="margin-right:0.05724em;" class="mord mathnormal">j</span><span class="mord mathnormal">x</span><span class="mord">1006@163.</span><span class="mord mathnormal">co</span><span class="mord mathnormal">m</span></span></span></span></p>
+<p>洛谷:<a href="https://www.luogu.com.cn/user/667250">click me!</a></p>
+<div><a href="https://883916.github.io/calc">简易计算器</a></div>
+<div><a href="https://883916.github.io/paste">留言板</a></div>
+<h2 class="atx" id="colorredcsp-j正式赛的血泪教训space"><span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.8778em;vertical-align:-0.1944em;" class="strut"></span><span class="mord"><span style="color:red;" class="mord mathnormal">cs</span><span style="color:red;" class="mord mathnormal">p</span><span style="margin-right:0.2222em;" class="mspace"></span><span style="color:red;" class="mbin">−</span><span style="margin-right:0.2222em;" class="mspace"></span><span style="margin-right:0.05724em;color:red;" class="mord mathnormal">j</span><span style="color:red;" class="mord cjk_fallback">正式赛的血泪教训</span><span style="margin-right:0.2778em;" class="mspace"></span><span style="color:red;" class="mrel">:</span><span style="color:red;" class="mspace"><span style="color:red;">&nbsp;</span></span></span></span></span></span></h2>
+<p><span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.6833em;" class="strut"></span><span class="mord"><span style="margin-right:0.09618em;color:red;" class="mord mathnormal">J</span><span style="color:red;" class="mord cjk_fallback">组</span><span style="margin-right:0.13889em;color:red;" class="mord mathnormal">T</span><span style="color:red;" class="mord">3</span><span style="color:red;" class="mord cjk_fallback">打表算错答案</span><span style="color:red;" class="mspace"><span style="color:red;">&nbsp;</span></span></span></span></span></span>
+恭喜你是第<a title="Get your own page views count badge on badges.toozhao.com" href="https://badges.toozhao.com/stats/01GJW6BDC5K70BRSVMB3V630W1"><img alt="Page Views Count" src="https://badges.toozhao.com/badges/01GJW6BDC5K70BRSVMB3V630W1/blue.svg"></a>个来到这里的人</p>
+<p>Projects by <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.854em;vertical-align:-0.1944em;" class="strut"></span><span class="mord mathnormal">gu</span><span class="mord mathnormal">o</span><span style="margin-right:0.05724em;" class="mord mathnormal">j</span><span class="mord mathnormal">u</span><span class="mord mathnormal">n</span><span class="mord mathnormal">x</span><span class="mord mathnormal">i</span></span></span></span></p>
 </article>
+</style>
+ 
+ <!--mouse effects show start-->
+<script type="text/javascript">
+var a_idx = 0;
+jQuery(document).ready(function($) {
+    $("body").click(function(e) {
+        var a = new Array("❤富强❤","❤民主❤","❤文明❤","❤和谐❤","❤自由❤","❤平等❤","❤公正❤","❤法治❤","❤爱国❤","❤敬业❤","❤诚信❤","❤友善❤");
+        var $i = $("<span></span>").text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;
+        var x = e.pageX,
+        y = e.pageY;
+        $i.css({
+            "z-index": 99999,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": "rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"//颜色随机
+            //"#2299DD"  //固定颜色
+        });
+        $("body").append($i);
+        $i.animate({
+            "top": y - 180,
+            "opacity": 0
+        },
+        1500,
+        function() {
+            $i.remove();
+        });
+    });
+});
+</script>
+<!--mouse effects show end-->
+
+<script>
+ 
+!function(){
+ 
+function n(n,e,t){
+ 
+return n.getAttribute(e)||t
+ 
+}
+ 
+function e(n){
+ 
+return document.getElementsByTagName(n)
+ 
+}
+ 
+function t(){
+ 
+var t=e("script"),o=t.length,i=t[o-1];
+ 
+return{
+ 
+l:o,z:n(i,"zIndex",-1),o:n(i,"opacity",.5),c:n(i,"color","0,0,0"),n:n(i,"count",99)
+ 
+}
+ 
+}
+ 
+function o(){
+ 
+a=m.width=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,
+ 
+c=m.height=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight
+ 
+}
+ 
+function i(){
+ 
+r.clearRect(0,0,a,c);
+ 
+var n,e,t,o,m,l;
+ 
+s.forEach(function(i,x){
+ 
+for(i.x+=i.xa,i.y+=i.ya,i.xa*=i.x>a||i.x<0?-1:1,i.ya*=i.y>c||i.y<0?-1:1,r.fillRect(i.x-.5,i.y-.5,1,1),e=x+1;e<u.length;e++)n=u[e],
+ 
+null!==n.x&&null!==n.y&&(o=i.x-n.x,m=i.y-n.y,
+ 
+l=o*o+m*m,l<n.max&&(n===y&&l>=n.max/2&&(i.x-=.03*o,i.y-=.03*m),
+ 
+t=(n.max-l)/n.max,r.beginPath(),r.lineWidth=t/2,r.strokeStyle="rgba("+d.c+","+(t+.2)+")",r.moveTo(i.x,i.y),r.lineTo(n.x,n.y),r.stroke()))
+ 
+}),
+ 
+x(i)
+ 
+}
+ 
+var a,c,u,m=document.createElement("canvas"),
+ 
+d=t(),l="c_n"+d.l,r=m.getContext("2d"),
+ 
+x=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||
+ 
+function(n){
+ 
+window.setTimeout(n,1e3/45)
+ 
+},
+ 
+w=Math.random,y={x:null,y:null,max:2e4};m.id=l,m.style.cssText="position:fixed;top:0;left:0;z-index:"+d.z+";opacity:"+d.o,e("body")[0].appendChild(m),o(),window.onresize=o,
+ 
+window.onmousemove=function(n){
+ 
+n=n||window.event,y.x=n.clientX,y.y=n.clientY
+ 
+},
+ 
+window.onmouseout=function(){
+ 
+y.x=null,y.y=null
+ 
+};
+ 
+for(var s=[],f=0;d.n>f;f++){
+ 
+var h=w()*a,g=w()*c,v=2*w()-1,p=2*w()-1;s.push({x:h,y:g,xa:v,ya:p,max:6e3})
+ 
+}
+ 
+u=s.concat([y]),
+ 
+setTimeout(function(){i()},100)
+ 
+}();
+ 
+</script>
 </body>
 </html>
