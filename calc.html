@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	<title>calc</title>  
+	<meta charset="UTF-8">
+  </head>
+  <body>
+	<h2>加法:</h2>
+	第一个数<input id='a'><br>
+	<select id="method">
+		<option>+</option>
+		<option>-</option>
+		<option>*</option>
+		<option>/</option>
+	</select><br>
+	第二个数<input id='b'><br>
+	<button onclick	="calc()">计算</button><br>
+	<span id="result"></span>
+	结果<input id="c">
+	<br><br>
+  </body>
+  <script>
+	function calc(){
+		let inputA=document.getElementById("a")
+		let inputB=document.getElementById("b")
+		let result = document.getElementById("result")
+		let inputC =document.getElementById("c")
+		let method =document.getElementById("method")
+		let res = 0;
+		let valA=parseFloat(inputA.value)//转小数
+		let valB=parseFloat(inputB.value)//转小数
+		if(method.value==="+"){
+			res=valA+valB
+		}
+		if(method.value==="-"){
+			res=valA-valB
+		}
+		if(method.value==="*"){
+			res=valA*valB
+		}
+		if(method.value==="/"){
+			res=valA/valB
+		}
+		result.innerText = res
+		inputC.value=res
+	}
+  </script>
+</html>
