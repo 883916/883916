@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>郭峻熙的个人主页</title>
+  <title>index</title>
   <style>
   @font-face {
   font-family: octicons-link;
@@ -2335,5 +2335,72 @@ body {
 恭喜你是第<a title="Get your own page views count badge on badges.toozhao.com" href="https://badges.toozhao.com/stats/01GJW6BDC5K70BRSVMB3V630W1"><img alt="Page Views Count" src="https://badges.toozhao.com/badges/01GJW6BDC5K70BRSVMB3V630W1/blue.svg"></a>个来到这里的人</p>
 <p>Projects by <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.854em;vertical-align:-0.1944em;" class="strut"></span><span class="mord mathnormal">gu</span><span class="mord mathnormal">o</span><span style="margin-right:0.05724em;" class="mord mathnormal">j</span><span class="mord mathnormal">u</span><span class="mord mathnormal">n</span><span class="mord mathnormal">x</span><span class="mord mathnormal">i</span></span></span></span></p>
 </article>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        padding: 100px;
+    }
+
+    textarea {
+        width: 200px;
+        height: 100px;
+        border: 1px pink solid;
+        /* 不设置轮廓 */
+        outline: none;
+        /* 设置其不能改变长宽 */
+        resize: none;
+    }
+
+    li {
+        width: 300px;
+        padding: 5px;
+        background-color: #eee;
+        font-size: 15px;
+        margin: 15px 0;
+    }
+
+    li a {
+        float: right;
+    }
+</style>
+
+<body>
+    <textarea></textarea>
+    <button>发布</button>
+    <ul></ul>
+    <script>
+        //1、获取元素
+        var txt = document.querySelector("textarea");
+        var btn = document.querySelector("button");
+        var ul = document.querySelector("ul");
+        //2、给button绑定点击事件
+        btn.onclick = function () {
+            if (txt.value == "") {//当文本框中没有文字时，提示
+                alert("您没有输入内容")
+            } else {
+                //创建元素li作为留言区
+                var li = document.createElement("li");
+                //将文本框中的内容放到li中,a标签中href中的内容代表什么都不执行
+                li.innerHTML = txt.value + "<a href='javascript:;'>删除</a>"
+                txt.value = "";//添加之后文本框的内容清空
+                //将留言添加到ul中，而且在最上方
+                ul.insertBefore(li, ul.children[0]);
+                //当点击删除时删除ul中的li
+                var as = document.querySelectorAll("a");
+                //循环给每个删除绑定事件
+                for (var i = 0; i < as.length; i++) {
+                    as[i].onclick = function () {
+                        //删除当前a标签所在位置的父节点li
+                        ul.removeChild(this.parentNode);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
 </body>
 </html>
