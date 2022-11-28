@@ -2338,39 +2338,11 @@ body {
 <p>Projects by <span class="katex"><span class="katex-mathml"></span><span aria-hidden="true" class="katex-html"><span class="base"><span style="height:0.854em;vertical-align:-0.1944em;" class="strut"></span><span class="mord mathnormal">gu</span><span class="mord mathnormal">o</span><span style="margin-right:0.05724em;" class="mord mathnormal">j</span><span class="mord mathnormal">u</span><span class="mord mathnormal">n</span><span class="mord mathnormal">x</span><span class="mord mathnormal">i</span></span></span></span></p>
 </article>
 </style>
+11月28更新
  <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
  <!--mouse effects show start-->
 <script type="text/javascript">
 var a_idx = 0;
-jQuery(document).ready(function($) {
-    $("body").click(function(e) {
-        var a = new Array("❤富强❤","❤民主❤","❤文明❤","❤和谐❤","❤自由❤","❤平等❤","❤公正❤","❤法治❤","❤爱国❤","❤敬业❤","❤诚信❤","❤友善❤");
-        var $i = $("<span></span>").text(a[a_idx]);
-        a_idx = (a_idx + 1) % a.length;
-        var x = e.pageX,
-        y = e.pageY;
-        $i.css({
-            "z-index": 99999,
-            "top": y - 20,
-            "left": x,
-            "position": "absolute",
-            "font-weight": "bold",
-            "color": "rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"//颜色随机
-            //"#2299DD"  //固定颜色
-        });
-        $("body").append($i);
-        $i.animate({
-            "top": y - 180,
-            "opacity": 0
-        },
-        1500,
-        function() {
-            $i.remove();
-        });
-    });
-});
-</script>
-<!--mouse effects show end-->
 
 <script>
  
